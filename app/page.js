@@ -21,6 +21,14 @@ export default function Home() {
             .
           </li>
           <li>Save and see your changes instantly.</li>
+          <li className="mt-2">
+            <a
+              href="/week-3"
+              className="text-blue-600 hover:underline"
+            >
+              Week 3 Assignment: Shopping List App
+            </a>
+          </li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -99,3 +107,4 @@ export default function Home() {
     </div>
   );
 }
+
