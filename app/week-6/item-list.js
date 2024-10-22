@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 import Item from './item';
 import itemsData from './items.json';
@@ -48,4 +49,5 @@ const ItemList = () => {
   );
 };
 export default ItemList;
+
 
