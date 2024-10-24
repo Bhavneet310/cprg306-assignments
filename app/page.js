@@ -36,10 +36,16 @@ export default function Home() {
               Week 5 Assignment: Add New Item Form
             </a>
           </li>
-          <li>
-          <a href="/week-6" className="text-blue-600 hover:underline">Week 6</a>
+          <li className="mt-2">
+            <a href="/week-6" className="text-blue-600 hover:underline">
+              Week 6 Assignment: Advanced Features
+            </a>
           </li>
-
+          <li className="mt-2">
+            <a href="/week-7" className="text-blue-600 hover:underline">
+              Week 7 Assignment: New Functionalities
+            </a>
+          </li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
