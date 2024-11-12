@@ -1,9 +1,5 @@
-import { AuthContextProvider } from "./_utils/auth-context";  
-const Layout = ({ children }) => {
-  return (
-    <AuthContextProvider>
-      {children}
-    </AuthContextProvider>
-  );
-};
-export default Layout;
+import { AuthContextProvider } from "./_utils/auth-context";
+ 
+export default function Layout({ children }) {
+  return <AuthContextProvider>{children}</AuthContextProvider>;
+}
