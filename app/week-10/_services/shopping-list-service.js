@@ -1,2 +1,26 @@
 import { db } from "../_utils/firebase";
-import { collection, getDocs, addDoc, query } from "firebase/firestore";
+import { collection, getDocs, addDoc, query, where } from "firebase/firestore";
+
+export async function getItems(userId) {
+  const items = [];
+  try {
+    const q = query(collection(db, `users/${userId}/items`));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+      items.push({ id: doc.id, ...doc.data() });
+    });
+  } catch (error) {
+    console.error("Error fetching items: ", error);
+  }
+  return items;
+}
+
+export async function addItem(userId, item) {
+  try {
+    const docRef = await addDoc(collection(db, `users/${userId}/items`), item);
+    return docRef.id;
+  } catch (error) {
+    console.error("Error adding item: ", error);
+    return null;
+  }
+}
