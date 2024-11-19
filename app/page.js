@@ -53,7 +53,12 @@ export default function Home() {
           </li>
           <li className="mt-2">
             <a href="/week-9" className="text-blue-600 hover:underline">
-              Week 9 Assignment: outh app
+              Week 9 Assignment: Auth App
+            </a>
+          </li>
+          <li className="mt-2">
+            <a href="/week-10" className="text-blue-600 hover:underline">
+              Week 10 Assignment: Cloud Firestore Service
             </a>
           </li>
         </ol>
@@ -78,3 +83,4 @@ export default function Home() {
     </div>
   );
 }
+
