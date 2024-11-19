@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import ItemList from './item-list';
 import NewItem from './new-item'; 
 import MealIdeas from './meal-ideas'; 
-import itemsData from './items.json';
 const ShoppingPage = () => {
   const [items, setItems] = useState(itemsData);
   const [selectedItemName, setSelectedItemName] = useState('');
